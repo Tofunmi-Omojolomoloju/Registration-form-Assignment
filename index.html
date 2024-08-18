@@ -7,46 +7,91 @@
 </head>
 <body>
     <header>
-        <h1>REGISTRATION FORM</h1>
+       <h1>Register to open an account</h1>
     </header>
     <main>
+        <h3>REGISTRATION FORM</h3>
+        <p>Fill in the form below, then submit to register</p>
         <form>
+            <div>
+                <label for="fullname">FULL NAME:</label>
+                <input type="text" id="fullname" name="fullname" required minlength="6" maxlength="60" placeholder="shawn mendez">
+            </div>
 
-            <label for="fullname">FULL NAME:</label>
-            <input type="text" id="fullname" name="fullname" required minlength="6" maxlength="60" placeholder="shawn mendez">
             <br>
-            <label for="username">USERNAME:</label>
-            <input type="text" id="username" name="username" placeholder="shawnmdez">
+
+            <div>
+                <label for="username">USERNAME:</label>
+                <input type="text" id="username" name="username" placeholder="shawnmdez">
+            </div>
+
             <br>
-            <label for="passwprd">PASSWORD:</label>
-            <input type="password" id="password"name=password required minlength="6" maxlength="15" placeholder="********">
+
+            <div>
+                <label for="passwprd">PASSWORD:</label>
+            <input type="password" id="password"name=password minlength="6" maxlength="15" placeholder="********" required>
+            </div>
+
             <br>
-            <label for="gender" >GENDER:</label>
-            <input type="radio" id="male" name="gender" >Male
-            <input type="radio" id="female" name="gender" >Female
+
+            <div>
+                <label for="gender" >GENDER:</label>
+                <input type="radio" id="male" name="gender" >Male
+                <input type="radio" id="female" name="gender" >Female
+            </div>
+
             <br>
-            <label for="email">EMAIL:</label>
-            <input type="email" id="email" name=email placeholder="shawnmdez@gmail.com">
+
+            <div>
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name=email placeholder="shawnmdez@gmail.com">
+            </div>
+            
             <br>
-            <label for="phone">PHONE NUMBER:</label>
-            <select name="phone" id="phone">
-                <option value="">+234</option>
-                <option value="">+27</option>
-                <option value="">+91</option>
-                <option value="">233</option>
-                <option value="">212</option>
-                <option value="">242</option>
-                <option value="">234</option>
-            </select>
-            <input type="tel" id="phone" placeholder="906-***-7213" >
+
+            <div>
+                <label for="phone">PHONE NUMBER:</label>
+                <select name="phone" id="phone">
+                    <option value="">+234</option>
+                    <option value="">+27</option>
+                    <option value="">+91</option>
+                    <option value="">+233</option>
+                    <option value="">+212</option>
+                    <option value="">+242</option>
+                    <option value="">+234</option>
+                    <option value="">+251</option>
+                    <option value="">+213</option>
+                    <option value="">+216</option>
+                    <option value="">+230</option>
+                    <option value="">+254</option>
+                    <option value="">+261</option>
+                    <option value="">+248</option>
+                    <option value="">+249</option>
+                    <option value="">+255</option>
+                    <option value="">+227</option>
+                    <option value="">+223</option>
+                    <option value="">+256</option>
+                <input type="tel" id="phone" placeholder="906-***-7213" required >
+            </div>
+            
             <br>
-            <label for="birthday">DATE OF BIRTH:</label>
-            <input type="date" id="birthday" name="birthday" >
+
+            <div>
+                <label for="birthday">DATE OF BIRTH:</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            
             <br>
-            <label for="id">ID CARD:</label>
-            <input type="file" id="id" name="id">
+           
+            <div>
+                <label for="id">ID CARD:</label>
+                <input type="file" id="id" name="id">
+            </div>
+            
             <br>
-            <label for="Country">COUNTRY:</label>
+
+            <div>
+                <label for="Country">COUNTRY:</label>
             <select name="Country" id="country">
                 <option value="Nigeria">Nigeria</option>
                 <option value="South Africa">South Africa</option>
@@ -54,15 +99,34 @@
                 <option value="Ghana">Ghana</option>
                 <option value="Morocco">Morocco</option>
                 <option value="Congo">Congo</option>
+                <option value="Ethopia">Ethopia</option>
+                <option value="Algeria">Algeria</option>
+                <option value="Tunesia">Tunesia</option>
+                <option value="Mauritius">Mauritius</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Madagascar">Madagascar</option>
+                <option value="Seychelles">Seychelles</option>
+                <option value="Sudan">Sudan</option>
+                <option value="Tanzania">Tanzania</option>
+                <option value="Niger">Niger</option>
+                <option value="Mali">Mali</option>
+                <option value="Uganda">Uganda</option>
             </select>
+            </div>
+            
             <br>
-            <input type="checkbox">Click to accept all terms and conditions.
+
+            <input type="checkbox" required>Click to accept all terms and conditions.
+
             <br>
-            <input type="reset" value="reset">
+
+            <button type="reset">Reset</button>
     
             <button type="submit">Submit</button>
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <p>all rights reserved*</p>
+    </footer>
 </body>
 </html>

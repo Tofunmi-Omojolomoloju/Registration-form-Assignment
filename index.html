@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Registration Form</title>
+</head>
+<body>
+    <header>
+        <h1>REGISTRATION FORM</h1>
+    </header>
+    <main>
+        <form>
+
+            <label for="fullname">FULL NAME:</label>
+            <input type="text" id="fullname" name="fullname" required minlength="6" maxlength="60" placeholder="shawn mendez">
+            <br>
+            <label for="username">USERNAME:</label>
+            <input type="text" id="username" name="username" placeholder="shawnmdez">
+            <br>
+            <label for="passwprd">PASSWORD:</label>
+            <input type="password" id="password"name=password required minlength="6" maxlength="15" placeholder="********">
+            <br>
+            <label for="gender" >GENDER:</label>
+            <input type="radio" id="male" name="gender" >Male
+            <input type="radio" id="female" name="gender" >Female
+            <br>
+            <label for="email">EMAIL:</label>
+            <input type="email" id="email" name=email placeholder="shawnmdez@gmail.com">
+            <br>
+            <label for="phone">PHONE NUMBER:</label>
+            <select name="phone" id="phone">
+                <option value="">+234</option>
+                <option value="">+27</option>
+                <option value="">+91</option>
+                <option value="">233</option>
+                <option value="">212</option>
+                <option value="">242</option>
+                <option value="">234</option>
+            </select>
+            <input type="tel" id="phone" placeholder="906-***-7213" >
+            <br>
+            <label for="birthday">DATE OF BIRTH:</label>
+            <input type="date" id="birthday" name="birthday" >
+            <br>
+            <label for="id">ID CARD:</label>
+            <input type="file" id="id" name="id">
+            <br>
+            <label for="Country">COUNTRY:</label>
+            <select name="Country" id="country">
+                <option value="Nigeria">Nigeria</option>
+                <option value="South Africa">South Africa</option>
+                <option value="India">India</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Congo">Congo</option>
+            </select>
+            <br>
+            <input type="checkbox">Click to accept all terms and conditions.
+            <br>
+            <input type="reset" value="reset">
+    
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer></footer>
+</body>
+</html>

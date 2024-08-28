@@ -4,129 +4,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Registration Form</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <header>
-       <h1>Register to open an account</h1>
-    </header>
-    <main>
-        <h3>REGISTRATION FORM</h3>
-        <p>Fill in the form below, then submit to register</p>
-        <form>
-            <div>
-                <label for="fullname">FULL NAME:</label>
-                <input type="text" id="fullname" name="fullname" required minlength="6" maxlength="60" placeholder="shawn mendez">
-            </div>
+    <main class="main">
+        
 
-            <br>
+        <div class="form_container">
 
-            <div>
-                <label for="username">USERNAME:</label>
-                <input type="text" id="username" name="username" placeholder="shawnmdez">
-            </div>
-
-            <br>
-
-            <div>
-                <label for="passwprd">PASSWORD:</label>
-            <input type="password" id="password"name=password minlength="6" maxlength="15" placeholder="********" required>
-            </div>
-
-            <br>
-
-            <div>
-                <label for="gender" >GENDER:</label>
-                <input type="radio" id="male" name="gender" >Male
-                <input type="radio" id="female" name="gender" >Female
-            </div>
-
-            <br>
-
-            <div>
-                <label for="email">EMAIL:</label>
-                <input type="email" id="email" name=email placeholder="shawnmdez@gmail.com">
-            </div>
-            
-            <br>
-
-            <div>
-                <label for="phone">PHONE NUMBER:</label>
-                <select name="phone" id="phone">
-                    <option value="">+234</option>
-                    <option value="">+27</option>
-                    <option value="">+91</option>
-                    <option value="">+233</option>
-                    <option value="">+212</option>
-                    <option value="">+242</option>
-                    <option value="">+234</option>
-                    <option value="">+251</option>
-                    <option value="">+213</option>
-                    <option value="">+216</option>
-                    <option value="">+230</option>
-                    <option value="">+254</option>
-                    <option value="">+261</option>
-                    <option value="">+248</option>
-                    <option value="">+249</option>
-                    <option value="">+255</option>
-                    <option value="">+227</option>
-                    <option value="">+223</option>
-                    <option value="">+256</option>
-                <input type="tel" id="phone" placeholder="906-***-7213" required >
-            </div>
-            
-            <br>
-
-            <div>
-                <label for="birthday">DATE OF BIRTH:</label>
-                <input type="date" id="birthday" name="birthday" required>
-            </div>
-            
-            <br>
-           
-            <div>
-                <label for="id">ID CARD:</label>
-                <input type="file" id="id" name="id">
-            </div>
-            
-            <br>
-
-            <div>
-                <label for="Country">COUNTRY:</label>
-            <select name="Country" id="country">
-                <option value="Nigeria">Nigeria</option>
-                <option value="South Africa">South Africa</option>
-                <option value="India">India</option>
-                <option value="Ghana">Ghana</option>
-                <option value="Morocco">Morocco</option>
-                <option value="Congo">Congo</option>
-                <option value="Ethopia">Ethopia</option>
-                <option value="Algeria">Algeria</option>
-                <option value="Tunesia">Tunesia</option>
-                <option value="Mauritius">Mauritius</option>
-                <option value="Kenya">Kenya</option>
-                <option value="Madagascar">Madagascar</option>
-                <option value="Seychelles">Seychelles</option>
-                <option value="Sudan">Sudan</option>
-                <option value="Tanzania">Tanzania</option>
-                <option value="Niger">Niger</option>
-                <option value="Mali">Mali</option>
-                <option value="Uganda">Uganda</option>
-            </select>
-            </div>
-            
-            <br>
-
-            <input type="checkbox" required>Click to accept all terms and conditions.
-
-            <br>
-
-            <button type="reset">Reset</button>
+            <form class="register_form">
+                
+                <div class="main_head">
+                    <h3>REGISTRATION FORM</h3>
+                    <p>Fill in the form below, then submit to register</p>
+                </div>
     
-            <button type="submit">Submit</button>
-        </form>
+                <div class="input_container">
+                    <label for="fullname">FULL NAME:</label>
+                    <input type="text" id="fullname" name="fullname" required minlength="6" maxlength="60" placeholder="shawn mendez">
+                </div>
+            
+                <div class="input_container">
+                    <label for="username">USERNAME:</label>
+                    <input type="text" id="username" name="username" placeholder="shawnmdez">
+                </div>
+
+                <div class="input_container">
+                    <label for="password">PASSWORD:</label>
+                    <input type="password" id="password"name=password minlength="6" maxlength="15" placeholder="********" required>
+                </div>
+            
+                <!-- <div>
+                    <label for="gender" >GENDER:</label>
+                    <input type="radio" id="gender" name="male" >Male
+                    <input type="radio" id="gender" name="female" >Female
+                </div> -->
+            
+                <div class="input_container">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name=email placeholder="shawnmdez@gmail.com">
+                </div>
+            
+                <!-- <div>
+                    <label for="phone">PHONE NUMBER:</label>
+                    <select name="phone" id="countrycodes">
+                        <option value="1">+234</option>
+                        <option value="2">+27</option>
+                        <option value="3">+91</option>
+                        <option value="4">+233</option>
+                        <option value="5">+212</option>
+                        <option value="6">+242</option>
+                        <option value="7">+234</option>
+                        <option value="8">+251</option>
+                        <option value="9">+213</option>
+                        <option value="10">+216</option>
+                        <option value="11">+230</option>
+                        <option value="12">+254</option>
+                        <option value="13">+261</option>
+                        <option value="14">+248</option>
+                        <option value="15">+249</option>
+                        <option value="16">+255</option>
+                        <option value="17">+227</option>
+                        <option value="18">+223</option>
+                        <option value="19">+256</option>
+                    </select>    
+                    <input type="tel" id="phone" placeholder="906-***-7213" required >
+                </div> -->
+                        
+                <div class="input_container">
+                    <label for="birthday">DATE OF BIRTH:</label>
+                    <input type="date" id="birthday" name="birthday" required>
+                </div>
+                       
+                <!-- <div class="input_container">
+                    <label for="id">ID CARD:</label>
+                    <input type="file" id="id" name="id">
+                </div> -->
+            
+                <!-- <div>
+                    <label for="country">COUNTRY:</label>
+                    <select name="country" id="country">
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="India">India</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Congo">Congo</option>
+                        <option value="Ethopia">Ethopia</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Tunesia">Tunesia</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Uganda">Uganda</option>
+                    </select>
+                </div> -->
+            
+                <!-- <input type="checkbox" id="t&c"  required>
+                <label for="t&c">Click to accept all terms and conditions.</label>
+            
+                <button type="reset">Reset</button> -->
+                
+                <button type="submit">Submit</button>
+            </form>
+
+            <div class="form_image_container">
+                <!-- <img src="/assets/back.jpg" alt="plant" class="form_image"> -->
+            </div>
+
+        </div>
     </main>
-    <footer>
-        <p>all rights reserved*</p>
-    </footer>
 </body>
 </html>
